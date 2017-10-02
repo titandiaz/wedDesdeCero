@@ -1,7 +1,7 @@
 //Variables
 
 //Paletas de colores
-$primary-color: hsl(330, 100, 40);
+$primary-color: hsl(180, 60, 40);
 $secundary-color: hsl(0, 10, 10);
 
 //tamaños de fuentes
@@ -23,3 +23,4 @@ $max-width: 1200px;
 @import "modules/_modules";
 @import "base/base";
 @import "theme/_menu";
+@import "theme/_banner.scss"

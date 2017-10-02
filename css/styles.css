@@ -412,11 +412,8 @@ template {
   .main-header-1 {
     width: 100%; }
   .main-header-2 {
+    display: none;
     width: 100%;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
@@ -425,8 +422,6 @@ template {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center; }
-  .main-header .contact-widget {
-    display: none; }
 
 .main-header {
   padding: 16px; }
@@ -467,31 +462,86 @@ template {
     color: #fff; }
   .button--light {
     background: #fff;
-    color: #cc0066; }
+    color: #29a3a3; }
   .button--cta {
-    background: #cc0066;
+    background: #29a3a3;
     color: #fff; }
   .button--square {
     padding: 0; }
 
+.social-networks {
+  padding-left: 1em; }
+  .social-networks a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    line-height: 3;
+    margin-right: .5em; }
+
 body {
   font-size: 12.8px; }
 
+img {
+  max-width: 100%; }
+
 .main-nav {
-  background: #cc0066; }
+  background: #29a3a3; }
 
 .main-menu {
   list-style: none;
   padding-left: 0;
   margin-top: 0;
-  margin-bottom: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex; }
+  margin-bottom: 0; }
+  .main-menu__item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
   .main-menu__link {
     display: block;
-    line-height: 2;
+    line-height: 3;
     padding: 0 1em;
     text-decoration: none;
     color: #fff; }
+
+.toggle-menu {
+  color: #29a3a3;
+  display: table;
+  font-size: 1.6em;
+  margin-left: auto;
+  margin-right: auto; }
+
+.main-banner {
+  position: relative; }
+  .main-banner__img {
+    display: block; }
+  .main-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(28, 23, 23, 0.6); }
+  .main-banner__data {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 65%; }
+  .main-banner__title {
+    text-align: center;
+    width: 100%;
+    color: #29a3a3;
+    margin: 0 0 .5em; }
+  .main-banner__subtitle, .main-banner__description {
+    display: none; }
