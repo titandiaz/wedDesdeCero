@@ -1,7 +1,15 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
 body {
 	font-size: $s;
+	font-family: 'Roboto';
 }
 
 img {
 	max-width: 100%;
 }
+
