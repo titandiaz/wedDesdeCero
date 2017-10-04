@@ -82,14 +82,18 @@
 	}
 
 	&__description {
-		font-size: $xs;
+		font-size: $s;
 		line-height: 1.6;
 	}
 
 	.button {
 		@media screen and (min-width: 767px) {
-			margin-right: 1em;
+			margin-right: 1em;			
 		}
+		@media screen and (max-width: 767px) {
+			font-size: $s;			
+		}
+
 	}
 
 }

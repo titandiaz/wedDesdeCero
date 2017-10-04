@@ -1,5 +1,6 @@
 .contact-widget {
 	display: flex;
+	align-items: center;
 
 	&__icon {
 		width: 2em;
@@ -7,7 +8,7 @@
 		background: $secundary-color;
 		color: #fff;
 		text-align: center;
-		font-size: 1.4em;
+		font-size: $xl;
 		margin-left: .5em;
 
 		&.button {
@@ -21,11 +22,13 @@
 	}
 
 	&__title {
-		margin: 0; 
+		margin: 0;
+		font-size: $m; 
 	}
 
 	&__content {
 		margin: 0;
+		font-size: $s;
 	}
 }
 
